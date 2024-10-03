@@ -17,43 +17,7 @@ public class Scripting_Unity : MonoBehaviour
 
     void Update()
     {
-        //Status Player
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            StatusPlayer();
-        }
-
-        //Commant
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Average();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            restartHpPlayer();
-        }
-
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            ForHpPlayer();
-        }
-
-        if (healthPlayer > 0 && Input.GetKeyDown(KeyCode.D))
-        {
-            HpDamage();
-        }
-
-        if (armorPlayer > 0 && Input.GetKeyDown(KeyCode.A))
-        {
-            ArmorDamage();
-        }
-
-        // Cek Kualitas Player
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            CheckPlayerQuality();
-        }
+        
     }
 
     public void ForHpPlayer()
@@ -152,4 +116,44 @@ public class Scripting_Unity : MonoBehaviour
             Debug.Log("Pemain butuh latihan");
         }
     }
+
+
+
+        ////Status Player
+        //if (Input.GetKeyDown(KeyCode.R))
+        //{
+        //    StatusPlayer();
+        //}
+
+        ////Commant
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    Average();
+        //}
+
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    restartHpPlayer();
+        //}
+
+        //if (Input.GetKeyDown(KeyCode.W))
+        //{
+        //    ForHpPlayer();
+        //}
+
+        //if (healthPlayer > 0 && Input.GetKeyDown(KeyCode.D))
+        //{
+        //    HpDamage();
+        //}
+
+        //if (armorPlayer > 0 && Input.GetKeyDown(KeyCode.A))
+        //{
+        //    ArmorDamage();
+        //}
+
+        //// Cek Kualitas Player
+        //if (Input.GetKeyDown(KeyCode.S))
+        //{
+        //    CheckPlayerQuality();
+        //}
 }
